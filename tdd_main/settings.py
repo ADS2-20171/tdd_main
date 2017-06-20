@@ -29,7 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+PROJECT_APPS = [
+    'tdd',
+]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,8 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'tdd',
-]
+    'django_jenkins',
+
+] + PROJECT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
